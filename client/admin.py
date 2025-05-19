@@ -1,7 +1,7 @@
 from django.contrib import admin
-from .models import Client
+from .models import Haridor
 
-@admin.register(Client)
-class ClientAdmin(admin.ModelAdmin):
-    list_display = ['full_name']
+@admin.register(Haridor)
+class HaridorAdmin(admin.ModelAdmin):
+    list_display = ['ism_familiya']
 

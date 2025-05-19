@@ -1,3 +1,6 @@
 from django.contrib import admin
+from .models import Maxsulot
 
-# Register your models here.
+@admin.register(Maxsulot)
+class MaxsulotAdmin(admin.ModelAdmin):
+    list_display = ['hajmi']
